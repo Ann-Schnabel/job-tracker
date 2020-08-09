@@ -7,12 +7,18 @@ const jobSchema = new Schema({
   contact: String,
   appDate: Date,
   appPassed: Boolean,
+  initialInfo: Date,
   firstInterview: Date,
   secondInterview: Date,
   thirdInterview: Date,
-  fourthInterview: DataCue,
+  fourthInterview: Date,
   status: String,
-  notes: String
+  notes: String,
+  notification: Date,
+  contactPlatform: String,
+  pros: [String],
+  cons: [String],
+  salary: Number
 })
 
 const Job = mongoose.model('job', jobSchema);

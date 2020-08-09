@@ -39,3 +39,70 @@ const port = process.env.PORT || 8000;
 const server = http.createServer(app);
 server.listen(port);
 console.log('Server listening on:', port);
+
+// Create Data
+
+let salesforceIndustries = new Job({
+    title: 'Associate Technical Consultant',
+    company: 'Salesforce Industries',
+    contact: 'Amber Hara',
+    appDate: new Date(2020, 6, 16),
+    appPassed: true,
+    initialInfo: '',
+    firstInterview: new Date(2020, 7, 3),
+    secondInterview: new Date(2020, 7, 4),
+    thirdInterview: new Date(2020, 7, 11),
+    fourthInterview: '',
+    status: 'Active',
+    notes: '',
+    notification: new Date(2020, 7, 12),
+    contactPlatform: 'Email',
+    pros: ['Great mentorship', 'Good salary', 'Great benefits'],
+    cons: ['Only 30% coding'],
+    salary: 0
+})
+
+let AIMSCO = new Job({
+    title: '??',
+    company: 'AIMSCO',
+    contact: 'Ben Simmons',
+    appDate: new Date(2020, 7, 3),
+    appPassed: true,
+    initialInfo: '',
+    firstInterview: new Date(2020, 7, 4),
+    secondInterview: '',
+    thirdInterview: '',
+    fourthInterview: '',
+    status: 'Active',
+    notes: 'Check in about date of second interview',
+    notification: new Date(2020, 7, 10),
+    contactPlatform: 'LinkedIn',
+    pros: ['Great mentorship', 'Mostly Coding'],
+    cons: ['Unsure when needed'],
+    salary: 0
+})
+
+let morton = new Job({
+    title: 'Node.js Developer',
+    company: 'Morton',
+    contact: 'Brandon Cooper',
+    appDate: new Date(2020, 6, 24),
+    appPassed: false,
+    initialInfo: '',
+    firstInterview: '',
+    secondInterview: '',
+    thirdInterview: '',
+    fourthInterview: '',
+    status: 'Rejected',
+    notes: 'More experience',
+    notification: '',
+    contactPlatform: 'Email',
+    pros: [],
+    cons: [],
+    salary: 0
+})
+
+// salesforceIndustries.save()
+// AIMSCO.save()
+// morton.save()
+
