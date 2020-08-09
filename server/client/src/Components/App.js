@@ -1,13 +1,16 @@
 import React from 'react';
 import '../Styles/App.css';
+import { Switch, Route } from "react-router"
 
-import NavBar from './NavBar'
+import Home from './Home'
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <h1>Hello, World</h1>
+    <div>
+      <Switch>
+        <Route exact path={"/"} component={Home} />
+      </Switch>
     </div>
   );
 }

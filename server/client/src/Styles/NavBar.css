@@ -1,9 +1,18 @@
 #logo {
     text-align: center;
     font-size: 2em;
-    margin: 10px auto;
+    margin: 0 auto;
+    padding-top: 5px;
 }
 
 .accent {
     color: var(--accent);
+}
+
+#navBar {
+    height: 50px;
+    width: 100%;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
 }

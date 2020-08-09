@@ -3,7 +3,7 @@ import '../Styles/NavBar.css';
 
 function NavBar() {
   return (
-    <div>
+    <div id='navBar'>
       <h1 id='logo'>Job Track<span className='accent'>·</span>r</h1>
     </div>
   );
