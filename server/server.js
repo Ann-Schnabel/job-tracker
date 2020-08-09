@@ -9,9 +9,8 @@ const keys = require('./config/keys');
 const moment = require("moment");
 
 // Schemas
-const Complaint = require("./models/complaintSchema");
-const Maintenance = require("./models/maintenanceSchema");
-const Tenant = require("./models/tenantSchema");
+const Job = require("./models/jobSchema");
+
 
 // DB Setup
 mongoose.connect(keys.MONGODB_URI);

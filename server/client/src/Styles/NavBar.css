@@ -1,0 +1,9 @@
+#logo {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px auto;
+}
+
+.accent {
+    color: var(--accent);
+}

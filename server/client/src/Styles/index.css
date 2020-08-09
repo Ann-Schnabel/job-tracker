@@ -1,4 +1,27 @@
+:root {
+  --main: rgb(189, 189, 189);
+  --background: rgb(26, 27, 23);
+  --accent: rgb(155, 224, 26);
+  --text: white;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--main);
+  font-family: 'Roboto', sans-serif;
 }
+
+h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 3em;
+  width: 80%;
+  margin: 50px auto;
+}
+
+h2 {
+  color: white;
+  font-weight: 500;
+}
+
