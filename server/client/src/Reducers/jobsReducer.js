@@ -1,4 +1,4 @@
-import { GET_JOBS } from "../actions/index";
+import { GET_JOBS } from "../Actions/index";
 
 export default function (state = [], action) {
   switch (action.type) {
