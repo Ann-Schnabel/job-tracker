@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Styles/App.css';
+import '../Styles/Home.css';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { getJobs } from "../Actions/index";
@@ -12,19 +12,34 @@ class Home extends Component {
     }
     
     renderTable() {
-        this.props.jobs.map(job => {
-            console.log(job.title)
+        return this.props.jobs.map((job) => {
+            return (
+                <tr key={job._id}>
+                    <td>{job.company}</td>
+                    <td>{job.title}</td>
+                </tr>
+            )
         })
     }
 
     render() {
         return (
             <div className="App">
-            <NavBar />
-            <h1>Go get 'em, Tiger.</h1>
-            <div id='jobTable'>
-                {this.renderTable()}
-            </div>
+                <NavBar />
+                <h1>Go get 'em, Tiger.</h1>
+                <div id='jobTable'>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Job Title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.renderTable()}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }

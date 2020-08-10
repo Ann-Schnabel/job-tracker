@@ -1,0 +1,39 @@
+#jobTable {
+    width: 80%;
+    background-color: var(--background);
+    color: white;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: auto;
+    border-radius: 25px;
+    max-width: 600px;
+}
+
+#jobTable table thead tr th:nth-child(1) {
+    width: 50%;
+    text-align: left;
+}
+
+#jobTable table thead tr th:nth-child(2) {
+    text-align: right;
+}
+
+#jobTable table tbody tr td:nth-child(2) {
+    text-align: right;
+    font-weight: 100;
+}
+
+#jobTable table thead tr th {
+    font-weight: 100;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border: solid var(--accent);
+    border-width: 0 0 1px 0;
+    height: 50px
+}
